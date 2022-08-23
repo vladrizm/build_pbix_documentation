@@ -16,7 +16,7 @@ library(openxlsx)
 
 # Path to the pbxi file:----
 
-pbix_path_file <- "C:\\Users\\rizmanoskiv\\Documents\\For Sally\\Prices.pbix"
+pbix_path_file <- "-------------PATH TO YOUR FILE------------(use two backslash \\ or one forward slash /) "
 
 file_name <- basename(pbix_path_file)
 
@@ -255,6 +255,8 @@ openxlsx::saveWorkbook(wb,
 
 # file.exists("TestFile.xlsx")
 
+### Call officer_code.R to build Word Document.
+source(paste0(getwd(), "/officer_code.R"))
 
 # Close application:----
 system2("taskkill", args = "/im PBIDesktop.exe")

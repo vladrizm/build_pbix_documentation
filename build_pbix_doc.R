@@ -1,4 +1,8 @@
 #### Import Library
+library(officer)
+library(officedown)
+library(magrittr)
+library(knitr)
 library(pbixr)
 library(knitr)
 library(RCurl)
@@ -12,7 +16,7 @@ library(openxlsx)
 
 # Path to the pbxi file:----
 
-pbix_path_file <- "update here your path to pbix file"
+pbix_path_file <- "C:\\Users\\rizmanoskiv\\Documents\\For Sally\\Prices.pbix"
 
 file_name <- basename(pbix_path_file)
 

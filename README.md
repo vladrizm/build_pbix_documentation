@@ -1,6 +1,6 @@
 # build_pbix_documentation
 
-Create very quickly excel report which includes:
+Create very quickly excel and word report which includes:
 
 -   SHA-256 of the pbix file
 

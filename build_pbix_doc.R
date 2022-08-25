@@ -16,8 +16,8 @@ library(openxlsx)
 
 # Path to the pbxi file:----
 
-# pbix_path_file <- "-------------PATH TO YOUR FILE------------(use two backslash \\ or one forward slash /) "
-pbix_path_file <- "C:\\Users\\rizmanoskiv\\Documents\\For Sally\\Prices.pbix"
+pbix_path_file <- "-------------PATH TO YOUR FILE------------(use two backslash \\ or one forward slash /) "
+
 file_name <- basename(pbix_path_file)
 
 # File Info:----

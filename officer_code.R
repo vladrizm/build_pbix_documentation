@@ -4,10 +4,10 @@ library(magrittr)
 library(knitr)
 
 template_path <- paste0(getwd(),"/","template_for_documentation.docx")
-knitr::kable(layout_summary(my_pres))
+
 ### Read and import a docx file as an R object representing the document
 doc_01 <- read_docx(path = template_path) 
-# knitr::kable(layout_summary(doc_01))
+
 doc_01 %>%
   body_add_par(paste0("Documentation for: ", "\'",file_name, "\'")
                , style = "Title") %>%

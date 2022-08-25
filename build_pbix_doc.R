@@ -16,8 +16,8 @@ library(openxlsx)
 
 # Path to the pbxi file:----
 
-pbix_path_file <- "-------------PATH TO YOUR FILE------------(use two backslash \\ or one forward slash /) "
-
+# pbix_path_file <- "-------------PATH TO YOUR FILE------------(use two backslash \\ or one forward slash /) "
+pbix_path_file <- "C:\\Users\\rizmanoskiv\\Documents\\For Sally\\Prices.pbix"
 file_name <- basename(pbix_path_file)
 
 # File Info:----
@@ -251,7 +251,7 @@ writeDataTable(wb, "m_query", get_m_query_mem_01)
 writeDataTable(wb, "measures", get_measures_01)
 writeDataTable(wb, "page_reports", page_reports)
 openxlsx::saveWorkbook(wb,
-                       paste0(getwd(),"/",sub('\\.xlsx$', '', file_name),"_Report",".xlsx"), overwrite = TRUE)
+                       paste0(getwd(),"/", paste0(sub(pattern = "(.*)\\..*$", replacement = "\\1", basename(pbix_path_file)),"_Documentation_", format(Sys.Date(), "%d.%m.%y"),".xlsx")), overwrite = TRUE)
 
 # file.exists("TestFile.xlsx")
 
